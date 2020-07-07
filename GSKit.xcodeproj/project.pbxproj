@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		862CF01324B474EA004163DA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862CF01124B474EA004163DA /* Alamofire.framework */; };
+		862CF01524B474EA004163DA /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862CF01224B474EA004163DA /* AlamofireImage.framework */; };
 		86A4AC2524B353C600635BE1 /* GSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A4AC2324B353C600635BE1 /* GSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		86A4AC2C24B3540000635BE1 /* GSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4AC2B24B3540000635BE1 /* GSViewController.swift */; };
 		86A4AC3424B3628700635BE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A4AC3324B3628700635BE1 /* AppDelegate.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		862CF01124B474EA004163DA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		862CF01224B474EA004163DA /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		86A4AC2024B353C600635BE1 /* GSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A4AC2324B353C600635BE1 /* GSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSKit.h; sourceTree = "<group>"; };
 		86A4AC2424B353C600635BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,7 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				862CF01524B474EA004163DA /* AlamofireImage.framework in Frameworks */,
 				86A4AC7224B37B1400635BE1 /* JGProgressHUD.framework in Frameworks */,
+				862CF01324B474EA004163DA /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +132,8 @@
 		86A4AC4524B3632200635BE1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				862CF01124B474EA004163DA /* Alamofire.framework */,
+				862CF01224B474EA004163DA /* AlamofireImage.framework */,
 				86A4AC6F24B37AED00635BE1 /* JGProgressHUD.framework */,
 			);
 			name = Frameworks;
@@ -251,12 +259,14 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/JGProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/JGProgressHUD.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
